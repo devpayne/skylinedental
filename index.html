@@ -248,19 +248,20 @@
             <text x="0" y="-28" class="map-label" text-anchor="middle">Costa Vida</text>
           </g>
 
-          <!-- Skyline Dental pin, on Medical Dr below the hospital -->
-          <g transform="translate(272,300)">
+          <!-- Skyline Dental pin, left of Medical Dr, close to the bubble -->
+          <path d="M300,240 C 275,247 250,254 228,260" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+          <g transform="translate(215,262)">
             <circle class="map-pulse" cx="0" cy="0" r="14" fill="var(--accent)" opacity=".35"/>
             <path d="M0,-40 C19,-40 31,-26 31,-10 C31,12 0,40 0,40 C0,40 -31,12 -31,-10 C-31,-26 -19,-40 0,-40 Z" fill="var(--accent)" stroke="#fff" stroke-width="4"/>
             <path d="M0,-8 c-6,0 -9,4 -13,4 -5,0 -9,-3 -11,2 -2,6 2,10 2,18 0,10 5,20 11,20 5,0 5,-10 11,-10 s6,10 11,10 c6,0 11,-10 11,-20 0,-8 4,-12 2,-18 -2,-5 -6,-2 -11,-2 -4,0 -7,-4 -13,-4z" fill="#fff" transform="translate(0,-14) scale(0.52)"/>
           </g>
 
           <!-- Speech bubble -->
-          <g transform="translate(260,95)">
-            <path d="M-130,-55 h260 a14,14 0 0 1 14,14 v64 a14,14 0 0 1 -14,14 h-124 l-16,26 -10,-26 h-110 a14,14 0 0 1 -14,-14 v-64 a14,14 0 0 1 14,-14 z" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
-            <text x="0" y="-16" text-anchor="middle" class="map-bubble-text">Amazing Smiles</text>
-            <text x="0" y="10" text-anchor="middle" class="map-bubble-text">start right here!</text>
-            <text x="0" y="34" text-anchor="middle" class="map-bubble-sub">— Skyline Dental</text>
+          <g transform="translate(255,95)">
+            <path d="M-150,-62 h300 a14,14 0 0 1 14,14 v76 a14,14 0 0 1 -14,14 h-143 l-18,30 -13,-30 h-127 a14,14 0 0 1 -14,-14 v-76 a14,14 0 0 1 14,-14 z" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
+            <text x="0" y="-20" text-anchor="middle" class="map-bubble-text">Amazing Smiles</text>
+            <text x="0" y="6" text-anchor="middle" class="map-bubble-text">start right here!</text>
+            <text x="0" y="32" text-anchor="middle" class="map-bubble-brand">Skyline Dental</text>
           </g>
         </svg>
         <a href="https://www.google.com/maps?q=990+Medical+Dr+Suite+G-1+Brigham+City+UT+84302" target="_blank" rel="noopener" class="btn btn-primary get-directions">Get Directions</a>
@@ -275,6 +276,21 @@
         <span class="eyebrow">Get In Touch</span>
         <h2>Request your appointment</h2>
         <p>Fill out the form and our team will reach out to find a time that works for you.</p>
+      </div>
+      <div class="contact-grid">
+      <div class="contact-info-card reveal">
+        <div class="office-detail">
+          <strong>Address</strong>
+          <p>990 Medical Dr. Suite G-1<br>Brigham City, UT 84302</p>
+        </div>
+        <div class="office-detail">
+          <strong>Phone</strong>
+          <p><a href="tel:4357238913">(435) 723-8913</a> · <a href="tel:4357236113">(435) 723-6113</a></p>
+        </div>
+        <div class="office-detail">
+          <strong>Email</strong>
+          <p><a href="mailto:skylineoffice990@yahoo.com">skylineoffice990@yahoo.com</a></p>
+        </div>
       </div>
       <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form reveal">
         <input type="hidden" name="form-name" value="appointment">
@@ -315,6 +331,7 @@
         </div>
         <button type="submit" class="btn btn-primary btn-lg">Send Request</button>
       </form>
+      </div>
     </div>
   </section>
 
