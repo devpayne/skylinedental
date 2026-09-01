@@ -386,6 +386,7 @@ ul{list-style:none; margin:0; padding:0;}
   .service-detail-icon{margin:0 auto;}
   .form-row{grid-template-columns:1fr;}
   .footer-inner{grid-template-columns:1fr; text-align:center;}
+  .footer-brand .footer-logo-img{margin-left:auto; margin-right:auto;}
   .footer-brand p{margin-left:auto; margin-right:auto;}
   .social-links{justify-content:center;}
 }
