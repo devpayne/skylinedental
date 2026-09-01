@@ -122,7 +122,7 @@ ul{list-style:none; margin:0; padding:0;}
   display:flex; align-items:center;
   background:radial-gradient(1200px 800px at 80% -10%, #163E7A 0%, var(--primary-dark) 55%, #071633 100%);
   color:#fff;
-  padding-top:120px;
+  padding:120px 0 80px;
 }
 .hero-blob{position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; z-index:0;}
 .blob-1{width:420px; height:420px; background:var(--primary-light); top:-120px; right:-80px; animation:drift 14s ease-in-out infinite;}
