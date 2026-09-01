@@ -216,11 +216,15 @@
           <title id="mapTitle">Illustrated map showing Skyline Dental on Medical Drive in Brigham City</title>
           <rect width="600" height="460" fill="#EEF5FC"/>
 
-          <!-- Medical Dr, curving from upper-right down to lower-left -->
-          <path d="M460,-10 C 445,70 420,120 380,170 S 300,270 250,320 S 170,410 130,470"
+          <!-- W 1100 S, the cross street Costa Vida sits on -->
+          <path d="M-10,440 C 150,428 300,418 450,406 S 590,394 610,392" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+          <text x="470" y="386" class="map-label" transform="rotate(-4 470 386)">W 1100 S</text>
+
+          <!-- Medical Dr, curving from upper-right down to lower-left, crossing W 1100 S -->
+          <path d="M460,-10 C 445,70 420,120 380,170 S 300,270 260,315 S 175,395 150,420"
                 fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round"/>
           <text x="475" y="40" class="map-label" transform="rotate(72 475 40)">Medical Dr</text>
-          <text x="215" y="345" class="map-label" transform="rotate(58 215 345)">Medical Dr</text>
+          <text x="207" y="362" class="map-label" transform="rotate(58 207 362)">Medical Dr</text>
 
           <!-- Wildwood Dr spur to Lindsay Park -->
           <path d="M430,120 C 470,110 500,120 520,90" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
@@ -229,32 +233,31 @@
             <text x="0" y="52" class="map-label" text-anchor="middle">Lindsay Park</text>
           </g>
 
-          <!-- Hospital campus spur, just west of Medical Dr -->
-          <path d="M368,190 C 340,192 320,198 300,210" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-          <g transform="translate(255,220)">
-            <rect x="-56" y="-38" width="112" height="86" rx="12" fill="#FBE9DA"/>
-            <circle cx="0" cy="-14" r="15" fill="#E4685D"/>
-            <path d="M0,-21 v14 M-7,-14 h14" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-            <text x="0" y="-56" class="map-label" text-anchor="middle">Brigham City<tspan x="0" dy="14">Community Hospital</tspan></text>
+          <!-- Brigham City Community Hospital, further up Medical Dr, above the office -->
+          <path d="M368,190 C 355,195 345,198 336,203" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+          <g transform="translate(320,207)">
+            <circle cx="0" cy="0" r="24" fill="#FBE9DA"/>
+            <circle cx="0" cy="0" r="12" fill="#E4685D"/>
+            <path d="M0,-6 v12 M-6,0 h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <text x="0" y="42" class="map-label" text-anchor="middle">Brigham City<tspan x="0" dy="14">Community Hospital</tspan></text>
           </g>
 
-          <!-- Costa Vida, further south along Medical Dr -->
-          <path d="M175,410 C 150,420 130,428 108,445" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="1,16"/>
-          <g transform="translate(78,452)">
-            <circle cx="0" cy="0" r="22" fill="#FCE3C3"/>
-            <text x="0" y="-30" class="map-label" text-anchor="middle">Costa Vida</text>
+          <!-- Costa Vida, on W 1100 S -- a different street from Medical Dr -->
+          <g transform="translate(75,428)">
+            <circle cx="0" cy="0" r="20" fill="#FCE3C3"/>
+            <text x="0" y="-28" class="map-label" text-anchor="middle">Costa Vida</text>
           </g>
 
-          <!-- Skyline Dental pin, on the hospital campus -->
-          <g transform="translate(255,262)">
+          <!-- Skyline Dental pin, on Medical Dr below the hospital -->
+          <g transform="translate(272,300)">
             <circle class="map-pulse" cx="0" cy="0" r="14" fill="var(--accent)" opacity=".35"/>
             <path d="M0,-40 C19,-40 31,-26 31,-10 C31,12 0,40 0,40 C0,40 -31,12 -31,-10 C-31,-26 -19,-40 0,-40 Z" fill="var(--accent)" stroke="#fff" stroke-width="4"/>
             <path d="M0,-8 c-6,0 -9,4 -13,4 -5,0 -9,-3 -11,2 -2,6 2,10 2,18 0,10 5,20 11,20 5,0 5,-10 11,-10 s6,10 11,10 c6,0 11,-10 11,-20 0,-8 4,-12 2,-18 -2,-5 -6,-2 -11,-2 -4,0 -7,-4 -13,-4z" fill="#fff" transform="translate(0,-14) scale(0.52)"/>
           </g>
 
           <!-- Speech bubble -->
-          <g transform="translate(300,110)">
-            <path d="M-140,-58 h280 a14,14 0 0 1 14,14 v70 a14,14 0 0 1 -14,14 h-100 l-30,32 -8,-32 h-142 a14,14 0 0 1 -14,-14 v-70 a14,14 0 0 1 14,-14 z" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
+          <g transform="translate(260,95)">
+            <path d="M-130,-55 h260 a14,14 0 0 1 14,14 v64 a14,14 0 0 1 -14,14 h-124 l-16,26 -10,-26 h-110 a14,14 0 0 1 -14,-14 v-64 a14,14 0 0 1 14,-14 z" fill="#fff" stroke="var(--accent)" stroke-width="3"/>
             <text x="0" y="-16" text-anchor="middle" class="map-bubble-text">Amazing Smiles</text>
             <text x="0" y="10" text-anchor="middle" class="map-bubble-text">start right here!</text>
             <text x="0" y="34" text-anchor="middle" class="map-bubble-sub">— Skyline Dental</text>
