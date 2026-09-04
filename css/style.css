@@ -127,13 +127,11 @@ ul{list-style:none; margin:0; padding:0;}
 .hero-bg-video{
   position:absolute; inset:0; z-index:0;
   width:100%; height:100%; object-fit:cover;
-  opacity:.28;
   pointer-events:none;
 }
 .hero-overlay{
   position:absolute; inset:0; z-index:1;
-  background:radial-gradient(1200px 800px at 80% -10%, #163E7A 0%, var(--primary-dark) 55%, #071633 100%);
-  opacity:.82;
+  background:linear-gradient(100deg, rgba(7,22,51,.92) 0%, rgba(7,22,51,.65) 45%, rgba(7,22,51,.4) 100%);
 }
 .hero-blob{position:absolute; border-radius:50%; filter:blur(60px); opacity:.55; z-index:2;}
 .blob-1{width:420px; height:420px; background:var(--primary-light); top:-120px; right:-80px; animation:drift 14s ease-in-out infinite;}
