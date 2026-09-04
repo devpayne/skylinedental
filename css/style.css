@@ -386,6 +386,7 @@ ul{list-style:none; margin:0; padding:0;}
   .footer-inner{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:760px){
+  .hero-bg-video{object-position:42% center;}
   .main-nav, .header-actions{display:none;}
   .nav-toggle{display:flex;}
   .main-nav.open{
