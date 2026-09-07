@@ -212,6 +212,8 @@ ul{list-style:none; margin:0; padding:0;}
 .service-card:hover .service-icon{transform:rotate(-8deg) scale(1.08);}
 .service-card h3{font-size:1.1rem; margin-bottom:8px;}
 .service-card p{color:var(--text-light); font-size:.92rem; margin:0;}
+.service-card-link{display:inline-flex; align-items:center; gap:6px; margin-top:12px; color:var(--primary); font-weight:600; font-size:.88rem; transition:gap .25s ease;}
+a.service-card:hover .service-card-link{gap:10px;}
 .section-cta{text-align:center; margin-top:48px;}
 .section-cta-left{text-align:left; margin-top:36px;}
 
@@ -369,6 +371,19 @@ ul{list-style:none; margin:0; padding:0;}
 }
 .service-detail h3{margin-bottom:8px;}
 .service-detail p{color:var(--text-light); margin:0;}
+a.service-detail{transition:background .25s ease, padding-left .25s ease;}
+a.service-detail:hover{background:var(--bg-soft); padding-left:12px; border-radius:12px;}
+.service-detail-link{display:inline-flex; align-items:center; gap:6px; margin-top:10px; color:var(--primary); font-weight:600; font-size:.88rem;}
+a.service-detail:hover .service-detail-link{gap:10px;}
+
+/* ===== Service detail (sub) pages ===== */
+.breadcrumb{font-size:.85rem; color:rgba(255,255,255,.75); margin-bottom:14px;}
+.breadcrumb a{color:rgba(255,255,255,.9); text-decoration:underline; text-underline-offset:3px;}
+.breadcrumb a:hover{color:#fff;}
+.related-services{margin-top:20px;}
+.related-services .info-card{transition:transform .25s ease, box-shadow .25s ease;}
+a.info-card:hover, .related-services a.info-card:hover{transform:translateY(-6px); box-shadow:0 20px 40px rgba(13,53,112,.14);}
+.info-card-link{display:inline-flex; align-items:center; gap:6px; margin-top:6px; color:var(--primary); font-weight:600; font-size:.88rem;}
 
 /* ===== Office page extras ===== */
 .video-embed{position:relative; width:100%; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);}
