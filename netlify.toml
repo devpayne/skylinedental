@@ -19,6 +19,31 @@
   status = 200
 
 [[redirects]]
+  from = "/services/cosmetic-dentistry/"
+  to = "/services/cosmetic-dentistry.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/veneers/"
+  to = "/services/veneers.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/crowns/"
+  to = "/services/crowns.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/bridges/"
+  to = "/services/bridges.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/dentures/"
+  to = "/services/dentures.html"
+  status = 200
+
+[[redirects]]
   from = "/office/"
   to = "/office.html"
   status = 200
